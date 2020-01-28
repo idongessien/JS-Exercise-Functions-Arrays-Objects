@@ -63,7 +63,7 @@ function makePersonObject() {
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName() {
-  name = "Luke";
+  name: "Luke";
   return 'Hello, my name is ' + name; 
 };
 
@@ -81,10 +81,10 @@ function getName() {
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
 function makeSmartPerson(name) {
-  return name = {
-    name: 'Sam',
-    sum(num1, num2){return num1 + num2;},
-    speak(){return 'Hello, my name is {name.name}.'}
+  return {
+    name: name,
+    sum: (num1, num2) => {return num1 + num2;},
+    speak: () => {return `Hello, my name is ${name}.`;}
   }
 }
 
