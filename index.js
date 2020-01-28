@@ -67,8 +67,6 @@ function getName() {
   return 'Hello, my name is ' + name; 
 };
 
-console.log(getName());
-
 /**
  * ### Challenge `makeSmartPerson`
  * 
@@ -82,11 +80,13 @@ console.log(getName());
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(/* code here */) {
-  /* code here */
+function makeSmartPerson(name) {
+  return name = {
+    name: 'Sam',
+    sum(num1, num2){return num1 + num2;},
+    speak(){return 'Hello, my name is {name.name}.'}
+  }
 }
-
-
 
 
 
